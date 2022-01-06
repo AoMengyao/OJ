@@ -1,0 +1,16 @@
+F:\Amy\oj\nowcoder\ConsoleApp\NC141\bin\Debug\net5.0\NC141.exe
+F:\Amy\oj\nowcoder\ConsoleApp\NC141\bin\Debug\net5.0\NC141.deps.json
+F:\Amy\oj\nowcoder\ConsoleApp\NC141\bin\Debug\net5.0\NC141.runtimeconfig.json
+F:\Amy\oj\nowcoder\ConsoleApp\NC141\bin\Debug\net5.0\NC141.runtimeconfig.dev.json
+F:\Amy\oj\nowcoder\ConsoleApp\NC141\bin\Debug\net5.0\NC141.dll
+F:\Amy\oj\nowcoder\ConsoleApp\NC141\bin\Debug\net5.0\ref\NC141.dll
+F:\Amy\oj\nowcoder\ConsoleApp\NC141\bin\Debug\net5.0\NC141.pdb
+F:\Amy\oj\nowcoder\ConsoleApp\NC141\obj\Debug\net5.0\NC141.csproj.AssemblyReference.cache
+F:\Amy\oj\nowcoder\ConsoleApp\NC141\obj\Debug\net5.0\NC141.GeneratedMSBuildEditorConfig.editorconfig
+F:\Amy\oj\nowcoder\ConsoleApp\NC141\obj\Debug\net5.0\NC141.AssemblyInfoInputs.cache
+F:\Amy\oj\nowcoder\ConsoleApp\NC141\obj\Debug\net5.0\NC141.AssemblyInfo.cs
+F:\Amy\oj\nowcoder\ConsoleApp\NC141\obj\Debug\net5.0\NC141.csproj.CoreCompileInputs.cache
+F:\Amy\oj\nowcoder\ConsoleApp\NC141\obj\Debug\net5.0\NC141.dll
+F:\Amy\oj\nowcoder\ConsoleApp\NC141\obj\Debug\net5.0\ref\NC141.dll
+F:\Amy\oj\nowcoder\ConsoleApp\NC141\obj\Debug\net5.0\NC141.pdb
+F:\Amy\oj\nowcoder\ConsoleApp\NC141\obj\Debug\net5.0\NC141.genruntimeconfig.cache
