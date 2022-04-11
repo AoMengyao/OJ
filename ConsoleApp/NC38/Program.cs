@@ -10,7 +10,7 @@ namespace NC38
             Console.WriteLine("Hello World!");
         }
 
-        public static List<int> SpiralOrder(List<List<int>> matrix)
+        public static List<int> spiralOrder(List<List<int>> matrix)
         {
             List<int> list = new List<int>();
             // write code here
@@ -20,6 +20,7 @@ namespace NC38
                 {
                 }
             }
+            return null;
         }
     }
 }
