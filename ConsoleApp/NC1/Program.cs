@@ -26,42 +26,50 @@ namespace NC1
         static void Main(string[] args)
         {
             Console.WriteLine(solve("1", "99"));
-            Console.WriteLine("Hello World!");
             Console.ReadLine();
         }
         public static string solve(string s, string t)
-        {
-            // write code here
+        {           
             if (s.Length == 0 && t.Length == 0)
-            {
+            { 
+                // 判断是否为空，返回0
                 return "0";
             }
             else if (s.Length == 0 && t.Length != 0)
             {
+                // 判断s是否为空，返回t
                 return t;
-            }else if (t.Length == 0 && s.Length != 0)
+            }
+            else if (t.Length == 0 && s.Length != 0)
             {
+                // 判断t是否为空，返回s
                 return s;
             }
             else
             {
+                // 两者都是非空情况下判断字符串长短
                 string big = s.Length > t.Length ? s : t;
                 string small = s.Length > t.Length ? t : s;
-                int[] result = new int[big.Length + 1];
-
+                // 存储结果为最大值位数+1位的ushort数组
+                // 因为是正整数，所有不存在负数
+                ushort[] result = new ushort[big.Length + 1];
+                //用0不全，编程和big一样的位数
                 small = small.PadLeft(big.Length, '0');
-
+                //进位位
                 ushort carry = 0;
-
+                //从个位开始计算，10进制计算
                 for(int i = big.Length-1; i >=0; i--)
                 {
                     ushort.TryParse(big[i].ToString(), out ushort bigTemp);
                     ushort.TryParse(small[i].ToString(), out ushort smallTemp);
-                    result[i + 1] = (bigTemp + smallTemp + carry) % 10;
-                    carry = (ushort)((bigTemp + smallTemp+carry) / 10);
+                    result[i + 1] = (ushort)((bigTemp + smallTemp + carry) % 10);
+                    carry = (ushort)((bigTemp + smallTemp + carry) / 10);
                 }
+                //最后一位为最后进位位
                 result[0] = carry;
+                //将result转为字符串
                 string temp = String.Join("", result);
+                //根据首位是否为0，进行结果取值
                 return temp[0] == '0' ? temp.Substring(1) : temp;
             }
         }
