@@ -60,8 +60,10 @@ namespace NC1
                 //从个位开始计算，10进制计算
                 for(int i = big.Length-1; i >=0; i--)
                 {
-                    ushort.TryParse(big[i].ToString(), out ushort bigTemp);
-                    ushort.TryParse(small[i].ToString(), out ushort smallTemp);
+                    var bigTemp = ushort.MinValue;
+                    var smallTemp = ushort.MinValue;
+                    ushort.TryParse(big[i].ToString(), out bigTemp);
+                    ushort.TryParse(small[i].ToString(), out smallTemp);
                     result[i + 1] = (ushort)((bigTemp + smallTemp + carry) % 10);
                     carry = (ushort)((bigTemp + smallTemp + carry) / 10);
                 }
@@ -70,7 +72,7 @@ namespace NC1
                 //将result转为字符串
                 string temp = String.Join("", result);
                 //根据首位是否为0，进行结果取值
-                return temp[0] == '0' ? temp.Substring(1) : temp;
+                return temp[0] == '0' ? temp[1..] : temp;
             }
         }
     }
