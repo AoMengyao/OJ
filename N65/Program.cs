@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace N65
+namespace NC65
 {
     internal class Program
     {
