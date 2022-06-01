@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections;
 
 namespace NC78
 {
@@ -6,16 +7,36 @@ namespace NC78
     {
         static void Main(string[] args)
         {
+            ListNode pHead = new ListNode(1);           
+            pHead.next = new ListNode(2);
+            pHead.next.next = new ListNode(3);
+            ReverseList(pHead);
             Console.WriteLine("Hello World!");
         }
         public static ListNode ReverseList(ListNode pHead)
         {
-            // write code here
-            while (pHead != null && pHead.next != null)
+            Stack reverse = new Stack();
+            ListNode newHead = null;
+            while (pHead!= null)
             {
+                reverse.Push(pHead.val);
                 pHead = pHead.next;
             }
-            return pHead;
+            while (reverse.Count > 0)
+            {
+                var item = new ListNode((int)reverse.Pop());
+                if (pHead == null)
+                {
+                    pHead = item;
+                    newHead = pHead;
+                }
+                else
+                {
+                    pHead.next = item;
+                    pHead = pHead.next;
+                }
+            }
+            return newHead;
         }
     }
 
