@@ -1,4 +1,4 @@
-﻿﻿### NC1 大数加法
+### NC1 大数加法
 
 > <font color='black'>**描述**</font>
 >
