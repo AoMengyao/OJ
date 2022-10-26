@@ -69,7 +69,12 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "NC4", "NC4\NC4.csproj", "{8
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "NC66", "NC66\NC66.csproj", "{91D632EC-3CDF-4083-AF14-372D0031FDFD}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NC278", "NC278\NC278.csproj", "{B39F2A6C-6616-4EF2-B7A1-634B8263EF89}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "NC278", "NC278\NC278.csproj", "{B39F2A6C-6616-4EF2-B7A1-634B8263EF89}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{469C2B37-361D-4B55-B3C3-30812D129D6E}"
+	ProjectSection(SolutionItems) = preProject
+		.editorconfig = .editorconfig
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
