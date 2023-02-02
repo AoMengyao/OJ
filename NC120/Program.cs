@@ -1,5 +1,4 @@
 ﻿using System;
-using System.Linq;
 
 namespace NC120
 {
@@ -11,7 +10,8 @@ namespace NC120
             Console.WriteLine("Hello World!");
         }
     }
-    class Solution
+
+    internal class Solution
     {
         /// <summary>
         /// 第一种办法：n转字符串，然后将字符串中的结果进行求和操作
@@ -37,12 +37,13 @@ namespace NC120
         public int NumberOf1(int n)
         {
             // write code here
-            int total = 0;
+            var total = 0;
             while (n != 0)
             {
-                n = n & (n - 1);
+                n &= (n - 1);
                 total++;
             }
+
             return total;
         }
     }
